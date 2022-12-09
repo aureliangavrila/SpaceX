@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchDetailsViewController" customModule="Devskiller" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="T2H-nv-BJT" id="6zs-87-O1j"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEp-zw-3lb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6W-qY-R6s">
+                            <rect key="frame" x="15" y="2.5" width="40" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="V7P-vh-Utw"/>
+                                <constraint firstAttribute="width" constant="40" id="yCR-3Z-4nE"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title=" ">
+                                <imageReference key="image" image="arrow.left" catalog="system" symbolScale="large" renderingMode="original"/>
+                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="backButtonPressed:" destination="-1" eventType="touchUpInside" id="mEN-dW-dD6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="z6W-qY-R6s" firstAttribute="leading" secondItem="aEp-zw-3lb" secondAttribute="leading" constant="15" id="Kgo-as-hM1"/>
+                        <constraint firstItem="z6W-qY-R6s" firstAttribute="centerY" secondItem="aEp-zw-3lb" secondAttribute="centerY" id="UC5-Cg-cR6"/>
+                        <constraint firstAttribute="height" constant="40" id="j4v-Wi-dyA"/>
+                    </constraints>
+                </view>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2H-nv-BJT">
+                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aEp-zw-3lb" secondAttribute="trailing" id="Jfb-J7-RhG"/>
+                <constraint firstItem="aEp-zw-3lb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LkB-uW-Fgc"/>
+                <constraint firstItem="T2H-nv-BJT" firstAttribute="top" secondItem="aEp-zw-3lb" secondAttribute="bottom" id="apV-ih-33D"/>
+                <constraint firstAttribute="trailing" secondItem="T2H-nv-BJT" secondAttribute="trailing" id="dKM-24-1ga"/>
+                <constraint firstItem="T2H-nv-BJT" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="fXI-NJ-1IA"/>
+                <constraint firstItem="aEp-zw-3lb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="om8-aR-OiR"/>
+                <constraint firstItem="T2H-nv-BJT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wyb-bu-gXu"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="130.88455772113943"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

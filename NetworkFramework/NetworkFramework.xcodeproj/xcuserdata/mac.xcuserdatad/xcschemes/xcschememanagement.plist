@@ -4,25 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SpaceX.xcscheme_^#shared#^_</key>
+		<key>NetworkFramework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
+		</dict>
+		<key>NetworkFrameworkTests copy.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>04EE28A72943626D0022868B</key>
+		<key>04EE298E29436D190022868B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>04EE28BD294362700022868B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>04EE28C7294362700022868B</key>
+		<key>04EE299829436D1A0022868B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
